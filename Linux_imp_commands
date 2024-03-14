@@ -1,0 +1,9 @@
+### Linux Important commands
+
+1. Vi file edittor commands
+vi filename (To open file edittor in linux)
+Shift + g (To go to end of file)
+gg (To go to bginning of file)
+dd (To delete current cursur line)
+d<number> (To delete number of line below current cursur)
+Shift + d (press twice) (To delete all the lines from file)
