@@ -21,11 +21,11 @@ history (Show all history commands)
 
 cat ~/.bash_history (Show all history commands)
 
-*history -c && history -w (Delete all history and save to .bash_history)*
+**history -c && history -w (Delete all history and save to .bash_history)**
 
 history -d <command_number> (remove specific command from history)
 
-*unset HISTFILE (To temporarily disable the saving of command history for our current session)*
+**unset HISTFILE (To temporarily disable the saving of command history for o*ur current session)**
 
 export HISTIGNORE="ls:cd:clear" (ignore commands like ls, cd, and clear from recording in history)
 
