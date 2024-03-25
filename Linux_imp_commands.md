@@ -41,3 +41,16 @@ Decrypt:
 
   gpg -d script.sh.gpg > decrypted_script.sh
 
+
+4. To make several files unable to alter for users other than the superuser.
+
+lsattr <filename> (list the file attribute)
+
+chattr +i <filename> (set chattr to file attribute it makes file immutable)
+
+chattr -i <filename>  (unset or remove chattr from file)
+
+chattr -R +i <folder> (set chattr to folder attribute it makes folder immutable)
+
+chattr -i <folder>  (unset or remove chattr from folder)
+
