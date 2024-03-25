@@ -25,9 +25,19 @@ cat ~/.bash_history (Show all history commands)
 
 history -d <command_number> (remove specific command from history)
 
-**unset HISTFILE (To temporarily disable the saving of command history for o*ur current session)**
+**unset HISTFILE (To temporarily disable the saving of command history for our current session)**
 
 export HISTIGNORE="ls:cd:clear" (ignore commands like ls, cd, and clear from recording in history)
 
 reset (reset terminal history)
+
+3. Encrypt linux script file
+
+Encrypt:
+
+  gpg -c script.sh
+
+Decrypt:
+
+  gpg -d script.sh.gpg > decrypted_script.sh
 
