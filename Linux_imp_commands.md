@@ -54,3 +54,7 @@ Decrypt:
 
 `chattr -i <folder>`  (unset or remove chattr from folder)
 
+
+5. Linux command to check the user password expiring in upcoming 7 days
+   
+`ED=$(chage -l test|grep 'Password expires'|awk '{print $4,$5,$6}');TD=$(date -d '+7days' +%m/%d/%Y);if [[ $(date -d "$ED" +%s) < $(date -d "$TD" +%s) ]];then echo -e "\033[31mUnsafe- $ED\033[0m";else echo -e "\033[32mSafe - $ED\033[0m";fi`
